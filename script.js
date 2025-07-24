@@ -28,7 +28,6 @@ console.log(`Your age: ${age}`);
 console.log(`The price: ${price}`);
 console.log(`Your gpa: ${gpa}`);
 console.log(`Is he student?: ${isStudent}`);
-*/
 
 let gitName = "GPouliakis";
 let age = 23;
@@ -37,3 +36,19 @@ let isStudent = true;
 document.getElementById("p1").textContent = `Your GitHub Name is ${gitName}`;
 document.getElementById("p2").textContent = `Your Age is ${age}`;
 document.getElementById("p3").textContent = `Are you Student? ${isStudent}`;
+
+*/
+
+let username;
+let password;
+
+document.getElementById("submit").onclick = function (){
+    username = document.getElementById("username").value;
+    password = document.getElementById("password").value;
+
+    document.getElementById("h1").textContent = `Welcome ${username}`
+
+    console.log(username);
+    console.log(password);
+    
+}
