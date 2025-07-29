@@ -10,9 +10,9 @@ document.getElementById("mysubmit").onclick = function(){
     console.log(circumference);
     document.getElementById("myh3").textContent = circumference + " cm";
 }
-*/
 
-/* a3uhsh meiwsei kai reset enos counter
+
+    A3uhsh meiwsei kai reset enos counter
 const increaseBtn = document.getElementById("increaseBtn");
 const ResetBtn = document.getElementById("resetBtn");
 const decreaseBtn = document.getElementById("decreaseBtn");
@@ -32,9 +32,9 @@ increaseBtn.onclick = function(){
     count++;
     countLabel.textContent = count;
 }
-*/
 
-/* Tuxaioi ari8moi
+
+    Tuxaioi ari8moi
 const myBtn = document.getElementById("myBtn");
 const label = document.getElementById("myLabel");
 
@@ -46,8 +46,9 @@ myBtn.onclick = function(){
     randomNum = Math.floor(Math.random() * max) + min;
      label.textContent = randomNum;
 }
-*/
 
+
+    EMFANIZEI ENA MHNUMA ME THN HLIKIA TOU XRHSTH
 const myText = document.getElementById("myText");
 const mySubmit = document.getElementById("mySubmit");
 const result = document.getElementById("result");
@@ -74,4 +75,35 @@ mySubmit.onclick = function(){
         result.textContent = `You can't drink`;
     }
 }
+*/
 
+
+ const MyCheckbox= document.getElementById("myCheckbox");
+ const visabtn= document.getElementById("visabtn");
+ const mastercardbtn= document.getElementById("mastercardbtn");
+ const paypalbtn= document.getElementById("paypalbtn");
+ const mySubmit= document.getElementById("mySubmit");
+ const subResult= document.getElementById("subResult");
+ const paymentResult= document.getElementById("paymentResult");
+
+ mySubmit.onclick = function() {
+
+    if(MyCheckbox.checked){
+        subResult.textContent = `Pay with card`;
+    }
+    else{
+        subResult.textContent = `You didn't select for card payment`;
+    }
+
+    if(visabtn.checked){
+        paymentResult.textContent = `You will pay with Visa`;
+    }
+    else if(mastercardbtn.checked){
+        paymentResult.textContent = `You will pay with MasterCard`;
+    }
+    else if(paypalbtn.checked){
+        paymentResult.textContent = `You will pay with PayPal`;
+    }else{
+        paymentResult.textContent = `Select a payment`;
+    }
+}
