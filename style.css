@@ -24,11 +24,8 @@
 }
 */
 
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-}
 
+/*
 #myBtn{
     font-size: 3em;
     padding: 5px 25px;
@@ -36,4 +33,9 @@ body{
 }
 #myLabel{
     font-size: 3em;
+}
+*/
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
 }
