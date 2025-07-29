@@ -12,6 +12,7 @@ document.getElementById("mysubmit").onclick = function(){
 }
 */
 
+/* a3uhsh meiwsei kai reset enos counter
 const increaseBtn = document.getElementById("increaseBtn");
 const ResetBtn = document.getElementById("resetBtn");
 const decreaseBtn = document.getElementById("decreaseBtn");
@@ -31,3 +32,18 @@ increaseBtn.onclick = function(){
     count++;
     countLabel.textContent = count;
 }
+*/
+
+// Tuxaioi ari8moi
+const myBtn = document.getElementById("myBtn");
+const label = document.getElementById("myLabel");
+
+const min = 1;
+const max = 100;
+let randomNum;
+
+myBtn.onclick = function(){
+    randomNum = Math.floor(Math.random() * max) + min;
+     label.textContent = randomNum;
+}
+
