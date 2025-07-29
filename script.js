@@ -34,7 +34,7 @@ increaseBtn.onclick = function(){
 }
 */
 
-// Tuxaioi ari8moi
+/* Tuxaioi ari8moi
 const myBtn = document.getElementById("myBtn");
 const label = document.getElementById("myLabel");
 
@@ -45,5 +45,33 @@ let randomNum;
 myBtn.onclick = function(){
     randomNum = Math.floor(Math.random() * max) + min;
      label.textContent = randomNum;
+}
+*/
+
+const myText = document.getElementById("myText");
+const mySubmit = document.getElementById("mySubmit");
+const result = document.getElementById("result");
+
+let age;
+
+mySubmit.onclick = function(){
+    age = myText.value;
+    age = Number(age);
+
+    if(age >= 100){
+        result.textContent = `You are too old to drink`;
+    }
+    else if(age == 0){
+        result.textContent = `You were just born`;
+    }
+    else if(age >= 18){
+        result.textContent = `You can drink`;
+    }
+    else if(age < 0){
+        result.textContent = `Negative age?`;
+    }
+    else{
+        result.textContent = `You can't drink`;
+    }
 }
 
