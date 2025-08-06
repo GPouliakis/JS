@@ -1,109 +1,63 @@
 /*
-const PI = 3.14159;
-let radius;
-let circumference;
 
-document.getElementById("mysubmit").onclick = function(){
-    radius = document.getElementById("mytext").value;
-    radius = Number(radius);
-    circumference = 2 * PI * radius; 
-    console.log(circumference);
-    document.getElementById("myh3").textContent = circumference + " cm";
-}
+// --ektupwse mhnuma--
+console.log("Hello");
+console.log("Welcome");
 
+// --ektupwse alert--
+window.alert("Error 404");
 
-    A3uhsh meiwsei kai reset enos counter
-const increaseBtn = document.getElementById("increaseBtn");
-const ResetBtn = document.getElementById("resetBtn");
-const decreaseBtn = document.getElementById("decreaseBtn");
-const countLabel = document.getElementById("countLabel");
+document.getElementById("myh1").textContent = "Gerard"
+document.getElementById("myp").textContent = "You lose"
 
-let count = 0;
+*/
 
-decreaseBtn.onclick = function(){
-    count--;
-    countLabel.textContent = count;
-}
-ResetBtn.onclick = function(){
-    count = 0;
-    countLabel.textContent = count;
-}
-increaseBtn.onclick = function(){
-    count++;
-    countLabel.textContent = count;
-}
+/*
+---Metavlites JS---
 
+let firstName = "George";
+let age = 23;
+let price = 5.99;
+let gpa = 8.4;
+let isStudent = true;
 
-    Tuxaioi ari8moi
-const myBtn = document.getElementById("myBtn");
-const label = document.getElementById("myLabel");
+console.log(typeof price);
 
-const min = 1;
-const max = 100;
-let randomNum;
+console.log(`Your name: ${firstName} `);
+console.log(`Your age: ${age}`);
+console.log(`The price: ${price}`);
+console.log(`Your gpa: ${gpa}`);
+console.log(`Is he student?: ${isStudent}`);
 
-myBtn.onclick = function(){
-    randomNum = Math.floor(Math.random() * max) + min;
-     label.textContent = randomNum;
-}
+let gitName = "GPouliakis";
+let age = 23;
+let isStudent = true;
 
+document.getElementById("p1").textContent = `Your GitHub Name is ${gitName}`;
+document.getElementById("p2").textContent = `Your Age is ${age}`;
+document.getElementById("p3").textContent = `Are you Student? ${isStudent}`;
 
-    EMFANIZEI ENA MHNUMA ME THN HLIKIA TOU XRHSTH
-const myText = document.getElementById("myText");
-const mySubmit = document.getElementById("mySubmit");
-const result = document.getElementById("result");
+*/
 
-let age;
+/*
+let username;
+let password;
 
-mySubmit.onclick = function(){
-    age = myText.value;
-    age = Number(age);
+document.getElementById("submit").onclick = function (){
+    username = document.getElementById("username").value;
+    password = document.getElementById("password").value;
 
-    if(age >= 100){
-        result.textContent = `You are too old to drink`;
-    }
-    else if(age == 0){
-        result.textContent = `You were just born`;
-    }
-    else if(age >= 18){
-        result.textContent = `You can drink`;
-    }
-    else if(age < 0){
-        result.textContent = `Negative age?`;
-    }
-    else{
-        result.textContent = `You can't drink`;
-    }
+    document.getElementById("h1").textContent = `Welcome ${username}`
+
+    console.log(username);
+    console.log(password);
+    
 }
 */
 
+// -- Ternary Operator --
+let poso = 60;
 
- const MyCheckbox= document.getElementById("myCheckbox");
- const visabtn= document.getElementById("visabtn");
- const mastercardbtn= document.getElementById("mastercardbtn");
- const paypalbtn= document.getElementById("paypalbtn");
- const mySubmit= document.getElementById("mySubmit");
- const subResult= document.getElementById("subResult");
- const paymentResult= document.getElementById("paymentResult");
+let ektpwsi = poso >= 60 ? 12 : 0;
 
- mySubmit.onclick = function() {
-
-    if(MyCheckbox.checked){
-        subResult.textContent = `Pay with card`;
-    }
-    else{
-        subResult.textContent = `You didn't select for card payment`;
-    }
-
-    if(visabtn.checked){
-        paymentResult.textContent = `You will pay with Visa`;
-    }
-    else if(mastercardbtn.checked){
-        paymentResult.textContent = `You will pay with MasterCard`;
-    }
-    else if(paypalbtn.checked){
-        paymentResult.textContent = `You will pay with PayPal`;
-    }else{
-        paymentResult.textContent = `Select a payment`;
-    }
-}
+console.log(`To teliko poso: ${poso - poso * (ektpwsi / 100)} `);
