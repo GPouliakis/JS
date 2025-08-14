@@ -55,9 +55,31 @@ document.getElementById("submit").onclick = function (){
 }
 */
 
-// -- Ternary Operator --
+/* -- Ternary Operator --
 let poso = 60;
 
 let ektpwsi = poso >= 60 ? 12 : 0;
 
 console.log(`To teliko poso: ${poso - poso * (ektpwsi / 100)} `);
+*/
+
+let testScore = 92;
+let letterScore;
+
+switch (true) {
+  case testScore >= 90:
+    letterScore = `A`;
+    break;
+  case testScore >= 80:
+    letterScore = `B`;
+    break;
+  case testScore >= 70:
+    letterScore = `C`;
+    break;
+
+  default:
+    letterScore = `F`;
+    break;
+}
+
+console.log(`Your grade is ${letterScore}`);
